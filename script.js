@@ -28,7 +28,6 @@ function addC() {
     grid.appendChild(newRow);
     newRow.appendChild(document.createElement("td"));
     numRows++;
-    numCols++;
   } else {
     rows = document.querySelectorAll("tr");
     for (i = 0; i < numRows; i++) {
@@ -36,6 +35,8 @@ function addC() {
     }
   }
   numCols++;
+  console.log(numRows);
+  console.log(numCols);
 }
 
 // Remove a row
