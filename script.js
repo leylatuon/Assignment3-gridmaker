@@ -37,7 +37,6 @@ function addC() {
   numCols++;
   console.log(numRows);
   console.log(numCols);
-}
 
 // Remove a row
 function removeR() {
