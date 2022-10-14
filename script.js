@@ -22,7 +22,20 @@ function addR() {
 
 // Add a column
 function addC() {
-  alert("Clicked Add Col"); // Replace this line with your code.
+  const grid = document.getElementById("grid");
+  if (numRows === 0) {
+    const newRow = document.createElement("tr");
+    grid.appendChild(newRow);
+    newRow.appendChild(document.createElement("td"));
+    numRows++;
+    numCols++;
+  } else {
+    rows = document.querySelectorAll("tr");
+    for (i = 0; i < numRows; i++) {
+      rows[i].insertCell();
+    }
+  }
+  numCols++;
 }
 
 // Remove a row
