@@ -7,5 +7,5 @@ Starter code for Assignment 3 - Grid Maker.
 - Jeffrey Li: lijeffrey02
 - Samuel Fang: SamuelFang
 
-Github Pages: https://leylatuon.github.io/Assignment3-gridmaker/
+Github Pages: https://leylatuon.github.io/Assignment3-gridmaker/ <br>
 [Assignment Guidelines](https://docs.google.com/document/d/1MepawXNhBXpkhtyvzqGwbRiwtuDdGSzk/edit)
