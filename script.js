@@ -87,5 +87,8 @@ function fillAll() {
 
 // Clear all cells
 function clearAll() {
-  alert("Clicked Clear All"); // Replace this line with your code.
+  let num = numRows*numCols;
+  for(i = 0; i < num; i++){
+    document.querySelectorAll("td")[i].style.backgroundColor = "white";
+  }
 }
