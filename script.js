@@ -60,7 +60,7 @@ function fillU() {
 
 // Fill all cells
 function fillAll() {
-  alert("Clicked Fill All"); // Replace this line with your code.
+  document.querySelectorAll("td").style.backgroundColor = colorSelected;
 }
 
 // Clear all cells
