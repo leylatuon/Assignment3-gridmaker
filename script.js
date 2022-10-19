@@ -39,8 +39,16 @@ function addC() {
 
 // Remove a row
 function removeR() {
-  alert("Clicked Remove Row"); // Replace this line with your code.
+  if(numRows > 0){
+    numRows--;
+    let grid = document.getElementById("grid");
+    grid.removeChild(grid.lastElementChild);
+    if(numRows == 0){
+      numCols = 0;
+    }
+  }
 }
+
 
 // Remove a column
 function removeC() {
