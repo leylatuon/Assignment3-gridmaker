@@ -79,7 +79,10 @@ function fillU() {
 
 // Fill all cells
 function fillAll() {
-  document.querySelectorAll("td").style.backgroundColor = colorSelected;
+  let num = numRows*numCols;
+  for(i = 0; i < num; i++){
+    document.querySelectorAll("td")[i].style.backgroundColor = colorSelected;
+  }
 }
 
 // Clear all cells
