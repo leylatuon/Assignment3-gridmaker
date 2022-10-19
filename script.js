@@ -52,7 +52,7 @@ function removeR() {
 
 // Remove a column
 function removeC() {
-  // let grid = document.getElementById("grid");
+  const grid = document.getElementById("grid");
   if(numCols > 0){
     numCols--;
     rows = document.querySelectorAll("tr");
