@@ -52,14 +52,17 @@ function removeR() {
 
 // Remove a column
 function removeC() {
-  let grid = document.getElementById("grid");
+  const grid = document.getElementById("grid");
   if(numCols > 0){
     numCols--;
     rows = document.querySelectorAll("tr");
     for (i = 0; i < numRows; i++) {
       rows[i].deleteCell(numCols);
     }
-    if(numCols == 0){
+    if (numCols == 0) {
+      while (grid.firstChild) {
+        grid.removeChild(grid.firstChild);
+      }
       numRows = 0;
     }
   }
