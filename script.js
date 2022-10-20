@@ -97,6 +97,6 @@ function fillAll() {
 function clearAll() {
   let num = numRows*numCols;
   for(i = 0; i < num; i++){
-    document.querySelectorAll("td")[i].style.backgroundColor = "white";
+    document.querySelectorAll("td")[i].style.backgroundColor = "";
   }
 }
