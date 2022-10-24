@@ -100,10 +100,3 @@ function clearAll() {
     document.querySelectorAll("td")[i].style.backgroundColor = "";
   }
 }
-
-//Select cell for color
-document.getElementById("grid").addEventListener("click", function (event) {
-  colorSelected = document.getElementById("selectedColorId").value;
-  event.target.style.backgroundColor = colorSelected;
-});
-
