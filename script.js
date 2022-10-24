@@ -39,21 +39,20 @@ function addC() {
 
 // Remove a row
 function removeR() {
-  if(numRows > 0){
+  if (numRows > 0) {
     numRows--;
     let grid = document.getElementById("grid");
     grid.removeChild(grid.lastElementChild);
-    if(numRows == 0){
+    if (numRows == 0) {
       numCols = 0;
     }
   }
 }
 
-
 // Remove a column
 function removeC() {
   const grid = document.getElementById("grid");
-  if(numCols > 0){
+  if (numCols > 0) {
     numCols--;
     rows = document.querySelectorAll("tr");
     for (i = 0; i < numRows; i++) {
@@ -71,14 +70,12 @@ function removeC() {
 // Set global variable for selected color
 function selectColor() {
   colorSelected = document.getElementById("selectedColorId").value;
-  console.log(colorSelected);
 }
 
 // Fill all uncolored cells
 function fillU() {
-  for(i = 0; i < numRows*numCols; i++){
-    if(document.querySelectorAll("td")[i].style.backgroundColor === "")
-    {
+  for (i = 0; i < numRows * numCols; i++) {
+    if (document.querySelectorAll("td")[i].style.backgroundColor === "") {
       document.querySelectorAll("td")[i].style.backgroundColor = colorSelected;
     }
   }
@@ -86,16 +83,16 @@ function fillU() {
 
 // Fill all cells
 function fillAll() {
-  let num = numRows*numCols;
-  for(i = 0; i < num; i++){
+  let num = numRows * numCols;
+  for (i = 0; i < num; i++) {
     document.querySelectorAll("td")[i].style.backgroundColor = colorSelected;
   }
 }
 
 // Clear all cells
 function clearAll() {
-  let num = numRows*numCols;
-  for(i = 0; i < num; i++){
+  let num = numRows * numCols;
+  for (i = 0; i < num; i++) {
     document.querySelectorAll("td")[i].style.backgroundColor = "";
   }
 }
